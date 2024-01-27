@@ -8,6 +8,12 @@ Rails.application.routes.draw do
     get '/menu', to: 'page#menu'
     get '/hours', to: 'page#hours'
     get '/location', to: 'page#location'
+    get '/cubed/:number', to: 'page#cubed'
+    get '/evenly/:number1/:number2', to: 'page#evenly'
+    get '/palindrome/:string', to:'page#palindrome'
+    get '/random/:number1/:number2', to: 'page#random'
+    get '/madlib/:noun/:verb/:adjective', to: 'page#madlib'
+end
+
   # Defines the root path route ("/")
   # root "posts#index"
-end
